@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Maze
 {
-	internal class EmptySpace
+	internal class EmptySpace : IMazeObject
 	{
-
+		public char Icon { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+		public bool IsSolid { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 	}
 }
