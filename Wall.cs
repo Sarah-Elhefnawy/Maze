@@ -8,7 +8,7 @@ namespace Maze
 {
 	internal class Wall : IMazeObject
 	{
-		public char Icon { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-		public bool IsSolid { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+		public char Icon { get => '#'; }
+		public bool IsSolid { get => true; }
 	}
 }
