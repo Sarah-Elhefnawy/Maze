@@ -14,11 +14,27 @@ namespace Maze
         private Player _Player;
         // calling an object from player class to tell maze class where the player is in the maze
 
+        private IMazeObject[,] _MazeObjectsArray;
+
         public Maze(int width, int height)
         {
             _Width = width;
             _Height = height;
+            _MazeObjectsArray = new IMazeObject[width, height];
+        }
 
+        public void DrawMaze()
+        {
+            for (int y = 0; y < _Height; y++) 
+            { 
+                for (int x = 0; x < _Width; x++)
+                {
+                    _MazeObjectsArray[x, y] = new Wall();
+
+                    Console.Write(_MazeObjectsArray[x, y].Icon);
+                }
+                Console.WriteLine();
+            }
         }
 
         public void MovePlayer()
