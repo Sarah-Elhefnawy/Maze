@@ -7,9 +7,17 @@
 			Console.WriteLine("Hello to the maze game!");
 			Console.WriteLine("Use keyboard arrows to move the player");
 
-			Maze maze = new Maze(20, 20);
+			// Construct new maze
+			Maze maze = new Maze(10, 12);
 
-			maze.DrawMaze();
+			while (true)
+			{
+				maze.DrawMaze();
+				maze.MovePlayer();
+			}
+			
+
+
 		}
 	}
 }
