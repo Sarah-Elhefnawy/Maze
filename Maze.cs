@@ -38,58 +38,48 @@ namespace Maze
                 for (int x = 0; x < _Width; x++)
 				{
 					// Outer walls && Exit
-					//if (x==0 && y == 1 ) // entry
-					//{
-					//	_MazeObjectsArray[x, y] = new EmptySpace();
-					//	Console.Write(_MazeObjectsArray[x, y].Icon);
-					//}
-					//else if (x == 9 && y == 10) //exit
-					//{
-					//	_MazeObjectsArray[x, y] = new EmptySpace();
-					//	Console.Write(_MazeObjectsArray[x, y].Icon);
-					//}
-					if (x == 0 || y == 0 || x == _Width - 1 || y == _Height - 1) //lkj
+					if (x==0 && y == 1 ) // entry
+					{
+						_MazeObjectsArray[x, y] = new EmptySpace();
+						Console.Write(_MazeObjectsArray[x, y].Icon);
+					}
+					else if (x == 9 && y == 9)     //exit
+					{
+						_MazeObjectsArray[x, y] = new EmptySpace();
+						Console.Write(_MazeObjectsArray[x, y].Icon);
+					}
+					else if (x == 0 || y == 0 || x == _Width - 1 || y == _Height - 1)
 					{
 						_MazeObjectsArray[x, y] = new Wall();
 						Console.Write(_MazeObjectsArray[x, y].Icon);
 					}
-                    //else if (x == _Player.X && y == _Player.Y)
-                    //{
-                    //    Console.Write(_Player.Icon);
-                    //}
-                    else if (x % 3 ==0 && y % 3 ==0) //lkj
+                    else if (x == _Player.X && y == _Player.Y)
+					{
+                        Console.Write(_Player.Icon);
+                    }
+                    else if (x % 3 ==0 && y % 3 ==0)
                     {
 						_MazeObjectsArray[x, y] = new Wall();
 						Console.Write(_MazeObjectsArray[x, y].Icon);
 					}
-					else if (x % 5 == 0 && y % 5 == 0) //lkj
+					else if (x % 2 == 0 && y % 2 == 0)
 					{
 						_MazeObjectsArray[x, y] = new Wall();
 						Console.Write(_MazeObjectsArray[x, y].Icon);
 					}
-					else // Empty spaces lkj
+					else if (x % 5 == 0 && y % 5 == 0)
+					{
+						_MazeObjectsArray[x, y] = new Wall();
+						Console.Write(_MazeObjectsArray[x, y].Icon);
+					}
+					else // Empty spaces
                     {
 						_MazeObjectsArray[x, y] = new EmptySpace();
 						Console.Write(_MazeObjectsArray[x, y].Icon);
 					}
-
-
-					if (x == _Player.X && y == _Player.Y)
-					{
-						Console.Write(_Player.Icon);
-					}
-                    else
-                    {
-						Console.Write(_MazeObjectsArray[x, y].Icon);
-					}
-
 				}
                 Console.WriteLine();
-                if (_Player.X == 9 && _Player.Y == 10)
-				{
-					Console.WriteLine("Congratulations, you won!");
-				}
-			}
+            }
         }
 
         public void MovePlayer()
