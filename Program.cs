@@ -15,9 +15,6 @@
 				maze.DrawMaze();
 				maze.MovePlayer();
 			}
-			
-
-
 		}
 	}
 }
