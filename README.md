@@ -26,7 +26,7 @@ Prioritize creating a working prototype first, then consider adding additional f
 
 ## Video Tutorial Reference
 
-This project was inspired by a tutorial video created by Piece of Cake Dev channel titled: [C# Level-B][عربى][19 - C# OOP Exercise 2 - Maze game project](https://www.youtube.com/watch?v=0YbuM2oPuOA&list=PLfHpC6JZ316f6YXKyux0dHjJXA0Kg38p7&index=19). The project focuses on collections, lists, stack, dictionary, and data structures, with object-oriented programming principles not fully implemented.
+This project was inspired by a tutorial video created by Piece of Cake Dev channel titled: [C# Level-B][عربى][19 - C# OOP Exercise 2 - Maze game project](https://www.youtube.com/watch?v=0YbuM2oPuOA&list=PLfHpC6JZ316f6YXKyux0dHjJXA0Kg38p7&index=19). Apply some of those basic principles and create a maze game. This is new C# Object-Oriented Programming (OOP) exercise.
 
 ## How to Use
 
