@@ -31,8 +31,11 @@ This project was inspired by a tutorial video created by Piece of Cake Dev chann
 ## How to Use
 
 1. Clone the repository.
-2. Open the solution in Visual Studio.
-3. Build and run the project.
+```
+         git clone        https://github.com/yourusername/Maze.git
+```
+3. Open the solution in Visual Studio.
+4. Build and run the project.
 
 ## Acknowledgements
 - [Piece of Cake Dev Channel](https://www.youtube.com/@poclearn) for the original idea and implementation.
